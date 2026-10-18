@@ -190,6 +190,12 @@ Fichiers :
 
 `notebooks/aba_framework_generator.ipynb` sert à prototypper / illustrer le même flux (création de cadre, transformations, arguments) hors Streamlit.
 
+Pour installer ses dépendances de visualisation dans l’environnement Python du notebook :
+
+```powershell
+python -m pip install matplotlib networkx
+```
+
 ---
 
 ## Petit rappel théorique
