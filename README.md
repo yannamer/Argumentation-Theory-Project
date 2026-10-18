@@ -8,29 +8,36 @@ Ce dépôt réunit le travail d'un groupe de trois étudiants. **Il contient tro
 
 | Partie | Sujet | Auteur | Dossier |
 |---|---|---|---|
-| 1 | [Sujet de la partie 1] | [Nom] | [`Partie1_.../`](Partie1_.../) |
-| 2 | Kialo : collecte de débats et extraction de relations (Pro/Con) | Yann Amer | [`Partie2_Kialo/`](Partie2_Kialo/) |
-| 3 | [Sujet de la partie 3] | [Nom] | [`Partie3_.../`](Partie3_.../) |
+| 1 | Reasoning with ABA : génération et analyse de cadres ABA / ABA+ | Nour Ben Mansour | [`01_Reasoning with ABA/`](01_Reasoning%20with%20ABA/) |
+| 2 | Kialo : collecte de débats et extraction de relations (Pro/Con) | Yann Amer | [`02_Relation-based argument mining/`](02_Relation-based%20argument%20mining/) |
+| 3 | Visualising acceptability degree spaces for gradual semantics | Antoine Salazar | [`03_Visualising acceptability degree spaces for gradual semantics/`](03_Visualising%20acceptability%20degree%20spaces%20for%20gradual%20semantics/) |
 
 ```
 .
-├── README.md                 ce fichier
-├── Partie1_.../              README, code, données, résultats de la partie 1
-├── Partie2_Kialo/            README, code, données, résultats de la partie 2
-└── Partie3_.../              README, code, données, résultats de la partie 3
+├── README.md                                                          ce fichier
+├── 01_Reasoning with ABA/                                             README, code, tests, interface de la partie 1
+├── 02_Relation-based argument mining/                                 README, code, données, résultats de la partie 2
+└── 03_Visualising acceptability degree spaces for gradual semantics/  README, notebook de la partie 3
 ```
 
 ## Résumé de chaque partie
 
-**Partie 1 : [titre].** [Une ou deux phrases : jeu de données, méthode, résultat principal.]
+**Partie 1 : Reasoning with ABA.** Génération et analyse de cadres ABA (Assumption-Based Argumentation) et ABA+ (préférences entre assumptions) : parsing d’un format texte, validation, transformations (non-circulaire / atomique), calcul des arguments et des attaques (classiques, normales et inverses). Interface Streamlit et API FastAPI ; tests pytest.
 
 **Partie 2 : Kialo.** Collecte des 250 débats les plus actifs de Kialo, parsing et exploration, puis classification de la relation (Pro ou Con) entre un argument et son parent. Meilleur modèle : DistilBERT, F1 macro de 0,686 sur le test, contre 0,648 pour TF-IDF avec régression logistique et 0,312 pour la base majoritaire. Une expérience de découverte de relations (savoir si deux arguments sont liés) reste au niveau du hasard avec TF-IDF.
 
-**Partie 3 : [titre].** [Une ou deux phrases.]
+**Partie 3 : Visualising acceptability degree spaces for gradual semantics.** [Une ou deux phrases.]
 
 ## Utilisation
 
 Chaque partie a ses propres dépendances et ses propres instructions : lisez le README du dossier concerné. Les environnements ne sont pas partagés, créez-en un par partie pour éviter les conflits de versions :
+
+```bash
+cd "01_Reasoning with ABA"
+python -m venv .venv
+source .venv/bin/activate        # Windows : .venv\Scripts\activate
+pip install streamlit fastapi uvicorn pytest
+```
 
 ```bash
 cd Partie2_Kialo
@@ -41,7 +48,7 @@ pip install -r requirements.txt
 
 ## Livrables
 
-- Rapport PDF commun (15 pages maximum, trois parties).
+- Rapport PDF commun.
 - Archive ZIP avec les notebooks (sorties conservées) et les fichiers de données.
 - Rapport de contribution d'une page, signé.
 
