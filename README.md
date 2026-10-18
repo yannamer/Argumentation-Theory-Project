@@ -26,7 +26,7 @@ Ce dépôt réunit le travail d'un groupe de trois étudiants. **Il contient tro
 
 **Partie 2 : Kialo.** Collecte des 250 débats les plus actifs de Kialo, parsing et exploration, puis classification de la relation (Pro ou Con) entre un argument et son parent. Meilleur modèle : DistilBERT, F1 macro de 0,686 sur le test, contre 0,648 pour TF-IDF avec régression logistique et 0,312 pour la base majoritaire. Une expérience de découverte de relations (savoir si deux arguments sont liés) reste au niveau du hasard avec TF-IDF.
 
-**Partie 3 : Visualising acceptability degree spaces for gradual semantics.** [Une ou deux phrases.]
+**Partie 3 : Visualising acceptability degree spaces for gradual semantics.** Implémentation et analyse de la sémantique graduelle h-categorizer pour modéliser l'espace d'acceptabilité d'un cadre d'argumentation. Démonstration, via des simulations Python (enveloppes convexes et heatmaps), que la convergence des scores dépend fondamentalement de la topologie du graphe (densité et structures spécifiques) plutôt que de l'intensité initiale des opinions.
 
 ## Utilisation
 
