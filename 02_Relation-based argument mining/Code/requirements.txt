@@ -1,0 +1,27 @@
+# Python >= 3.12 (le code utilise des f-strings avec guillemets imbriqués)
+# Bornes minimales déduites des fonctionnalités utilisées, non testées une par une.
+# Pour reproduire exactement votre environnement : pip freeze > requirements.txt
+
+# Données et calcul
+numpy>=1.26
+pandas>=2.2
+scipy>=1.11
+scikit-learn>=1.4
+matplotlib>=3.8
+
+# Collecte (notebook 01)
+requests>=2.31
+selenium>=4.20
+tqdm>=4.66
+
+# Prétraitement (notebook 03)
+langdetect>=1.0.9
+
+# Modèles (notebook 04)
+torch>=2.2
+transformers>=4.46
+datasets>=2.19
+accelerate>=0.30
+
+# Notebooks
+ipykernel>=6.29
